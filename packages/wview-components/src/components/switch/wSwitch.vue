@@ -1,6 +1,6 @@
 <template>
   <div class="w-switch">
-    <div class="switch-core">
+    <div @click="toggle" :class="{ checked }" class="switch-core">
       <div class="switch-button"></div>
     </div>
   </div>
@@ -15,8 +15,11 @@ export default defineComponent({
   name: 'w-switch',
   props: switchProps,
   setup (props) {
-    const active = ref(true)
-    return { active }
+    const checked = ref(false)
+    const toggle = () => {
+      checked.value = !checked.value
+    }
+    return { toggle, checked }
   }
 })
 </script>
