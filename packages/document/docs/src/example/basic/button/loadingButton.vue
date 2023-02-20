@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import { Button } from 'wview'
+import { Button } from 'wviewui'
 </script>
 
 <template>
   <div class="box">
     <div class="btn">
-      <Button type="default" icon="loading" loading>载入中</Button>
+      <Button type="primary" icon="loading" loading>载入中</Button>
     </div>
   </div>
 </template>

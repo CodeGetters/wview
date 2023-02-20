@@ -11,8 +11,8 @@
 ```ts
 // main.ts
 import { createApp } from 'vue'
-import wview from 'wview'
-import 'wview/dist/index.css'
+import wview from 'wviewui'
+import 'wviewui/dist/styles.css'
 import App from './App.vue'
 
 const app = createApp(App)
@@ -26,8 +26,8 @@ app.mount('#app')
 ```ts
 // main.ts
 import { createApp } from 'vue'
-import { Button } from 'wview'
-import 'wview/dist/index.css'
+import { Button } from 'wviewui'
+import 'wviewui/dist/styles.css'
 import App from './App.vue'
 
 const app = createApp(App)
